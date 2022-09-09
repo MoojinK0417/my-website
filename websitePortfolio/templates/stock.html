@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title%} Stock {% endblock%}
+
+{% block content %}
+
+<!-- <style>
+    div{
+        border: 1px solid
+    }
+</style>  -->
+
+
+{% load static %}
+<link href="{% static 'css/stock.css' %}" rel="stylesheet" type="text/css">
+
+<div style="width: 100; height: 1600px; background-color: rgb(249, 245, 253); text-align: center; margin: auto;">
+
+    <br/><h1><i class="fa-solid fa-arrow-trend-up"></i> Simple Stock Trading</h1>
+    <a href="https://github.com/MoojinK0417/stock-trading"><button class="cssbuttons-io">
+        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
+      </button>
+    </a>
+    <div style="width: 30%; margin: auto; height: 500px; position: relative; left: -450px; font-size: 20px; text-align: left;">
+        <br/><br/><br/><br/><br/><br/>
+        <b>&nbsp;&nbsp;Language</b>&nbsp;&nbsp;&nbsp;&nbsp;Python<br/><br/>
+        <b>&nbsp;&nbsp;Interface</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PyQt(Qtdesigner)<br/><br/>
+        <b>&nbsp;&nbsp;Libraries</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finplot, FinanceDataReader, mplfinance<br/><br/>
+        <b>&nbsp;&nbsp;APIs</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yahoo_fin<br/><br/>
+        <b>&nbsp;&nbsp;DB</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sqlite<br/><br/>
+        <b>&nbsp;&nbsp;IDE</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DB browser for Sqllite, VS Code<br/><br/><br/><br/><br/><br/><br/><br/>
+
+        •  Used <b>Sqlite</b> for SQL Server to make a user sign up and login.<br/><br/>
+        • Built with <b>yahoo_fin</b> API and libraries to bring live stock prices and information.<br/><br/>
+        • Program layout is designed by <b>QT Designer </b>to display stock graphs and user information.<br/><br/>
+    </div>
+
+<div style="width: 45%; margin: auto; height: 500px; position: relative; right: -400px; top: -480px; text-align: center;">
+    <!-- for video -->
+    <img src="{% static 'media/stockphotos/stockproject1.png' %}">&nbsp;&nbsp;
+    <img src="{% static 'media/stockphotos/stockproject2.png' %}"><br/><br/>
+    <img src="{% static 'media/stockphotos/stockproject3.png' %}"><br/><br/>
+    <img src="{% static 'media/stockphotos/stockproject4.png' %}">
+</div>
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<div style="width: 100%; height: 150px; position:absolute; background-color:  #443657; color: white;">
+    <div style="width: 20%;  position: absolute; left: 50%; top: 30px; text-align: center;">
+    {% url 'home' as home_url %}
+    <span>{% if request.path == home_url %}Home{% else %}<a href="{{ home_url }} "style=" color: white;">Home</a>{% endif %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+    {% url 'project' as project_url %}
+    <span>{% if request.path == project_url %}Project{% else %}<a href="{{ project_url }}" style=" color: white;">Project</a>{% endif %}</span>
+    <!-- {% url 'contact' as contact_url %}
+    <span>{% if request.path == contact_url %}Contact{% else %}<a href="{{ contact_url }}" style=" color: white;">Contact</a>{% endif %}</span> -->
+    </div>
+    <div style="width: 30%;  position: absolute; left: 20%;">
+        <h1>Moojin</h1>
+        <p>Jr. Full stack developer</p>
+    </div>
+</div>
+
+{% endblock %}

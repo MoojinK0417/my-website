@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block title%} Home {% endblock%}
+
+{% block content %}
+
+<!-- <style>
+    div{
+        border: 1px solid
+    }
+</style>  -->
+{% load static %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet" type="text/css">
+<script src="{% static '/JS/home.js' %}" type="text/javascript"></script>  
+
+<div style="width: 100%; height: 950px; background-color: rgb(249, 245, 253);">
+    
+<div style="float: left; position: relative; right: -100px; bottom: -350px; margin:auto;">
+    <a href="https://github.com/MoojinK0417"><i class="fa-brands fa-github fa-lg"></i></a>
+    <br/>
+    <br/>
+    <a href="https://www.linkedin.com/in/moojin-kim-251051193/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+</div>
+<div style="width: 30%; position: absolute; top: 30%;left: 20%; margin: -25px 0 0 -25px;">
+    <div>
+    <h1 class='lineUp' style="font-size: 70px; animation-duration: 10s;">Hi, I'm Moojin</h1>
+    <p style="font-size: 20px; position: relative; top: -25px;">Jr. Full stack developer</p>
+    <p style="color: rgb(145, 140, 140); position: relative; top: -20px; font-size: 17px;">Being a recent graudate, I feel that what I may lack in personal work experience I make up for with the ability to adapt quickly to any and all working environmnets. </p>
+
+    
+
+<button class="cssbuttons-io-button">Send Me An Email
+     <div class="icon">
+      <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+    </div>
+  </button>
+
+    </div>
+</div>
+<div  style="width: 30%; position: absolute; top: 30%;left: 55%; margin: -25px 0 0 -25px;">
+    <img src="{% static 'media/Profile.jpg' %}" style="width: 500px;  border-radius: 50%;"> 
+</div>
+
+<div class="container_mouse" style="position:relative; top: 85%;">
+    <span class="mouse-btn">
+        <span class="mouse-scroll"></span>
+    </span>
+    <h3 style="text-align: center;">Scroll down</h3>
+</div>
+
+</div>
+
+
+<div style="width: 97%; height: 650px; background-color:white; margin: auto;">
+<div style="text-align: center;">
+    <h1 style="font-size: 47px; position: relative; top:100px;"> About Me </h1>
+    <p style=" position: relative; top:90px;"> My introduction </p>
+</div>
+
+<div style="width: 49%; float: left; text-align: center; position: relative; top:175px;">
+    <i class="fa-solid fa-graduation-cap fa-2x"></i>
+    <span style="font-size: 27px;">Education</span><br/><br/><br/><br/><br/><br/><br/>
+    <b>Computer Programmer Analyst</b>
+    <p>Canada - Canadore College, ON</p>
+    <i class="fa-solid fa-calendar-day"></i> 2019-2022
+
+</div>
+
+<div style="width: 49%; float: right; text-align: center; position: relative; top:175px;">
+    <i class="fa-solid fa-keyboard fa-2x"></i>
+    <span style="font-size: 27px;">Skills</span><br/><br/><br/><br/><br/><br/>
+    
+    
+    <div style="width: 100%;">
+        <i class="fa-solid fa-code fa-2x"></i>
+        <span style="font-size: 20px;">Programming -</span>
+        <b>Java, Python, PHP, JavaScript, C, C++</b>
+        
+    </div>
+   <div style="width: 100%;">
+    <i class="fa-solid fa-database fa-2x"></i>
+    <span style="font-size: 20px;">Web & Database -</span>
+    <b>BootStarp, ReactJS, HTML, CSS, Django, MySQL, PostgreSQL, MySQL, Firebase</b>
+   </div> 
+
+    <div  style="width: 100%;">
+    <i class="fa-solid fa-toolbox fa-2x"></i>
+    <span style="font-size: 20px;">Tech -</span>
+    <b>Git, Docker, Unix, Visual Studio, VSCode</b>
+    </div>
+</div>
+</div>
+
+
+<div style="width: 100%; height:400px; background-color: rgb(249, 245, 253);">
+
+    <div style="text-align: center;">
+        <h1 style="font-size: 47px; position: relative; top:50px;"> Experince / Work</h1>
+    </div>
+
+    <div class="wrapper" style="position: relative; top: 80px; margin: auto;">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+        <div class="shadow"></div>
+    </div>
+    
+</div>
+
+
+<div style="width: 97%; height:500px; text-align: center; background-color: white; margin: auto;">
+
+    <div>
+        <h1 style="font-size: 47px; position: relative; top:50px;"> Contact Me </h1>
+    </div>
+
+    
+    <div style="width: 33%; float: left; position: relative; top:125px;">
+       
+        <p style="font-size: 27px;"> <i class="fa-solid fa-phone fa-1x"></i> Call Me</p>
+        <p style="color: rgb(185, 180, 180);">705-303-9468</p>
+    </div>
+
+    <div style="width: 32%; margin: auto; position: relative; top:150px;">
+       
+        <p style="font-size: 27px;"> <i class="fa-solid fa-envelope fa-1x"></i> Email</p>
+        <p style="color: rgb(185, 180, 180);">mujin990417@gmail.com</p>
+    </div>
+
+    <div style="width: 33%; float: right;  position: relative; top:29px;">
+        
+        <p style="font-size: 27px;"><i class="fa-solid fa-map-pin fa-1x"></i> Location</p>
+        <p style="color: rgb(185, 180, 180);">9 - 539 Cassells st, ON, CA </p>
+    </div> 
+    
+</div>
+
+ <div style="width: 100%; height: 150px; position:absolute; background-color: #443657; color: white;">
+    <div style="width: 20%;  position: absolute; left: 50%; top: 30px; text-align: center;">
+    {% url 'home' as home_url %}
+    <span>{% if request.path == home_url %}Home{% else %}<a href="{{ home_url }}">Home</a>{% endif %}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+    {% url 'project' as project_url %}
+    <span>{% if request.path == project_url %}Project{% else %}<a href="{{ project_url }}" style=" color: white;">Project</a>{% endif %}</span>
+    <!-- {% url 'contact' as contact_url %}
+    <span>{% if request.path == contact_url %}Contact{% else %}<a href="{{ contact_url }}" style=" color: white;">Contact</a>{% endif %}</span> -->
+    </div>
+    <div style="width: 30%;  position: absolute; left: 20%;">
+        <h1>Moojin</h1>
+        <p>Jr. Full stack developer</p>
+    </div>
+</div>
+{% endblock %}
