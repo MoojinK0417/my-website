@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+
+
+from django.views.static import serve
+# from django.conf.urls import url
 from . import views, views2
+from django.urls import re_path as url 
  
 # from django.contrib.auth import views as auth_views
 
@@ -28,6 +34,9 @@ urlpatterns = [
     path('indeed/',views.indeed, name="indeed"),
     path('twitter/',views.twitter, name="twitter"),
     
+    url(r'^media/(?P<path>.*)$', serve,{'documnet_root': settings.MEDIA_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve,{'documnet_root': settings.STATIC_ROOT}),
+
 
 ]
 
