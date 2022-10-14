@@ -54,7 +54,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 ROOT_URLCONF = 'websitePortfolio.urls'
 
@@ -123,8 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 
-MEDIA_ROOT = 'media/'
-MEDIA_ROOT = os.path.join(PROJECT_DIR, 'static/')
+MEDIA_ROOT = '/media/'
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'static')
 MEDIA_DIRS = (
     os.path.join(PROJECT_DIR, "media"),
 )
