@@ -1,0 +1,203 @@
+/* From uiverse.io by @barisdogansutcu */
+
+a{
+  text-decoration: none;
+}
+
+
+.download-button {
+ position: relative;
+ border-width: 0;
+ color: white;
+ font-size: 15px;
+ font-weight: 600;
+ border-radius: 4px;
+ z-index: 1;
+}
+
+.download-button .docs {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 10px;
+ min-height: 40px;
+ padding: 0 10px;
+ border-radius: 4px;
+ z-index: 1;
+ background-color:  #28193d;
+ border: solid 1px #e8e8e82d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+ position: absolute;
+ inset: 0;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ max-width: 90%;
+ margin: 0 auto;
+ z-index: -1;
+ border-radius: 4px;
+ transform: translateY(0%);
+ background-color: #28193d;
+ border: solid 1px #01e0572d;
+ transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover .download {
+ transform: translateY(100%)
+}
+
+.download svg polyline,.download svg line {
+ animation: docs 1s infinite;
+}
+
+@keyframes docs {
+ 0% {
+  transform: translateY(0%);
+ }
+
+ 50% {
+  transform: translateY(-15%);
+ }
+
+ 100% {
+  transform: translateY(0%);
+ }
+}
+
+/* From uiverse.io by @Cornerstone-04 */
+.box {
+    width: 80px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #262626;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+
+
+
+  /* From uiverse.io by @adamgiebl */
+.cssbuttons-io {
+ position: relative;
+ font-family: inherit;
+ font-weight: 500;
+ font-size: 18px;
+ letter-spacing: 0.05em;
+ border-radius: 0.8em;
+ border: none;
+ background: linear-gradient(to right, #8e2de2, #4a00e0);
+ color: ghostwhite;
+ overflow: hidden;
+}
+
+.cssbuttons-io svg {
+ width: 1.2em;
+ height: 1.2em;
+ margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+ position: relative;
+ z-index: 10;
+ transition: color 0.4s;
+ display: inline-flex;
+ align-items: center;
+ padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 0;
+}
+
+.cssbuttons-io::before {
+ content: "";
+ background: #000;
+ width: 120%;
+ left: -10%;
+ transform: skew(30deg);
+ transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+ transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+ transform: scale(0.95);
+}
+
+
