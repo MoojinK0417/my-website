@@ -3,12 +3,19 @@
 {% load static %}
 <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css">
 <script src="{% static '/JS/main.js' %}" type="text/javascript"></script>  
+<link href="{% static 'css/stock.css' %}" rel="stylesheet" type="text/css">
+
 <div style="position: sticky; top: 0; padding:30px; font-family: sans-serif; height: 35px; background-color: rgb(253, 253, 253);;  z-index: 999;">
 
-<b style="float:left; font-size:25px; color: #28193d;">Moojin</b>
+    <a href="https://github.com/MoojinK0417/my-website"><button class="cssbuttons-io">
+    <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
+  </button>
+</a>
+<!-- <b style="margin: auto; text-align: center; font-size:25px; color: #28193d;">Moojin</b> -->
 
 
-<div style="float:right; ">
+
+<div style="float:right;">
  
     {% url 'home' as home_url %}
     <span class="box">{% if request.path == home_url %}Home{% else %}<a href="{{ home_url }} "style="color: black;">Home</a>{% endif %}</span>
